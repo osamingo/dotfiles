@@ -23,9 +23,6 @@ brew bundle ~/dotfiles/Brewfile
 # Install oh-my-zsh
 curl -L http://install.ohmyz.sh | sh
 
-# Copy template directory
-cp -R ~/dotfiles/.git_template/ ~/
-
 # Install homesick
 gem install homesick
 homesick clone git@github.com:osamingo/dotfiles.git
@@ -33,4 +30,3 @@ homesick symlink dotfiles
 
 # Cleanup
 echo -e '\033[0;32mYou should run command "rm -fr ~/dotfiles"\033[0;39m'
-
