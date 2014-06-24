@@ -24,7 +24,7 @@ brew bundle ~/dotfiles/Brewfile
 curl -L http://install.ohmyz.sh | sh
 
 # Copy template directory
-cp -R ~/.homesick/repos/dotfiles/.git_template/ ~/
+cp -R ~/dotfiles/.git_template/ ~/
 
 # Install homesick
 gem install homesick
