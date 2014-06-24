@@ -32,5 +32,5 @@ homesick clone git@github.com:osamingo/dotfiles.git
 homesick symlink dotfiles
 
 # Cleanup
-rm -fr ~/dotfiles
+echo -e '\033[0;32mYou should run command "rm -fr ~/dotfiles"\033[0;39m'
 
