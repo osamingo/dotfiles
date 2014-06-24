@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Init
+# Initialize
 cd ~/
 
 # Disable dashboard
@@ -23,6 +23,14 @@ brew bundle ~/dotfiles/Brewfile
 # Install oh-my-zsh
 curl -L http://install.ohmyz.sh | sh
 
-# Init template directory
-git config --global init.templatedir '~/.git_template'
+# Copy template directory
+cp -R ~/.homesick/repos/dotfiles/.git_template/ ~/
+
+# Install homesick
+gem install homesick
+homesick clone git@github.com:osamingo/dotfiles.git
+homesick symlink dotfiles
+
+# Cleanup
+rm -fr ~/dotfiles
 
