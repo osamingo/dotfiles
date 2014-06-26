@@ -1,7 +1,8 @@
 #!/bin/sh
 
-# Initialize
-cd ~/
+# Init
+BASE_DIR=`pwd`
+cd
 
 # Disable dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean true
@@ -18,15 +19,17 @@ killall Finder Dock
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 # Kick Brewfile
-brew bundle ~/dotfiles/Brewfile
+cd $BASE_DIR
+brew bundle
 
 # Install oh-my-zsh
+cd
 curl -L http://install.ohmyz.sh | sh
 
 # Install homesick
-gem install homesick
+sudo gem install homesick
 homesick clone git@github.com:osamingo/dotfiles.git
 homesick symlink dotfiles
 
 # Cleanup
-echo -e '\033[0;32mYou should run command "rm -fr ~/dotfiles"\033[0;39m'
+echo '\n===\n\033[0;32mFinish!!\033[0;39m\n'
