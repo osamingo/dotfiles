@@ -32,4 +32,4 @@ homesick clone git@github.com:osamingo/dotfiles.git
 homesick symlink dotfiles
 
 # Cleanup
-echo '\n===\n\033[0;32mFinish!!\033[0;39m\n'
+echo '\n===\n\033[0;32mFinish!!\033[0;39m You should run command "cd ../ && rm -fr dotfiles"\n'
