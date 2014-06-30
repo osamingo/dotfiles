@@ -53,8 +53,9 @@ cask install sequel-pro || true
 cask install stuffit-expander || true
 cask install eclipse-java || true
 cask install xtrafinder || true
+cask install genymotion || true
+cask install dash || true
 
 cleanup
 cask cleanup
 cask alfred link
-
