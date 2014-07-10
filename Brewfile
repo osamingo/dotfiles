@@ -1,5 +1,5 @@
 update
-upgrade
+# upgrade
 
 tap caskroom/cask || true
 install brew-cask || true
@@ -56,6 +56,6 @@ cask install xtrafinder || true
 cask install genymotion || true
 cask install dash || true
 
-cleanup
-cask cleanup
+# cleanup
+# cask cleanup
 cask alfred link
