@@ -4,6 +4,9 @@ update
 tap caskroom/cask || true
 install brew-cask || true
 
+tap peco/peco || true
+install peco || true
+
 install git || true
 install zsh || true
 install wget || true
