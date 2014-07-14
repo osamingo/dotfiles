@@ -29,6 +29,7 @@ install hub || true
 install zsh-completions || true
 install zsh-syntax-highlighting || true
 install z || true
+install awscli || true
 
 cask install alfred || true
 cask install keyremap4macbook || true
