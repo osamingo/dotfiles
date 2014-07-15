@@ -30,6 +30,8 @@ install zsh-completions || true
 install zsh-syntax-highlighting || true
 install z || true
 install awscli || true
+install docker || true
+install boot2docker || true
 
 cask install alfred || true
 cask install keyremap4macbook || true
