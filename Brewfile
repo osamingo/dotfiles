@@ -61,6 +61,7 @@ cask install eclipse-java || true
 cask install xtrafinder || true
 cask install genymotion || true
 cask install dash || true
+cask install atom || true
 
 # cleanup
 # cask cleanup
