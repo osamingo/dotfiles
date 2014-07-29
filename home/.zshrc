@@ -75,6 +75,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ## z
 . `brew --prefix`/etc/profile.d/z.sh
 
+## alias
+alias up="cd ../"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
